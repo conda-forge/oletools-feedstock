@@ -14,14 +14,16 @@ oletools is a package of python tools to analyze Microsoft OLE2 files (also call
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/oletools-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/oletools-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/oletools-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/oletools-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/oletools-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/oletools-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/oletools-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/oletools-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/oletools-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/oletools-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/oletools-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/oletools-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/oletools/badges/version.svg)](https://anaconda.org/conda-forge/oletools)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/oletools/badges/downloads.svg)](https://anaconda.org/conda-forge/oletools)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-oletools-green.svg)](https://anaconda.org/conda-forge/oletools) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/oletools.svg)](https://anaconda.org/conda-forge/oletools) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/oletools.svg)](https://anaconda.org/conda-forge/oletools) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/oletools.svg)](https://anaconda.org/conda-forge/oletools) |
 
 Installing oletools
 ===================
