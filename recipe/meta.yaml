@@ -1,6 +1,6 @@
 {% set name = "oletools" %}
-{% set version = "0.53.1" %}
-{% set sha256 = "09859fb0b5eb4e13dada140fa54e22aee87176c37d63fd3132ef45eb94a6ec1f" %}
+{% set version = "0.54" %}
+{% set sha256 = "dca46d3339aee012d08cd4549be0b133a1bf3ef2ec46369de6fb96af52ad9475" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
