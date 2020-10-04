@@ -5,7 +5,7 @@ Home: https://github.com/decalage2/oletools
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: python tools to analyze MS OLE2 files
 
