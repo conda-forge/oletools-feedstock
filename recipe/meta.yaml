@@ -1,6 +1,6 @@
 {% set name = "oletools" %}
-{% set version = "0.55" %}
-{% set sha256 = "3675ffca84398afd4c33852004b085c1b8dfa6079960cfba7ece35db9ebddb6f" %}
+{% set version = "0.60" %}
+{% set sha256 = "85500022ebf58e9bd514e295270cb5ac2b061b2e59912432a3a7ceffd88db3e0" %}
 
 package:
   name: {{ name|lower }}
@@ -32,13 +32,9 @@ about:
   home: https://github.com/decalage2/oletools
   license: BSD-3-Clause
   license_family: BSD
-  license_file: 'oletools/LICENSE.txt'
-  summary: 'python tools to analyze MS OLE2 files'
-  description: 
-    oletools is a package of python tools to analyze Microsoft OLE2 files
-    (also called Structured Storage, Compound File Binary Format or Compound 
-    Document File Format), such as Microsoft Office documents or Outlook messages, 
-    mainly for malware analysis, forensics and debugging. 
+  license_file: oletools/LICENSE.txt
+  summary: python tools to analyze MS OLE2 files
+  description: oletools is a package of python tools to analyze Microsoft OLE2 files (also called Structured Storage, Compound File Binary Format or Compound Document File Format), such as Microsoft Office documents or Outlook messages, mainly for malware analysis, forensics and debugging.
   doc_url: https://github.com/decalage2/oletools/wiki
   dev_url: https://github.com/decalage2/oletools
 
