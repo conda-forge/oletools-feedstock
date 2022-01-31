@@ -23,6 +23,12 @@ requirements:
     - pip
   run:
     - python >=3.6
+    - colorclass
+    - easygui
+    - msoffcrypto-tool
+    - olefile
+    - pcodedmp
+    - pyparsing
 
 test:
   imports:
