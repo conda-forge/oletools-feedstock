@@ -1,6 +1,6 @@
 {% set name = "oletools" %}
-{% set version = "0.56" %}
-{% set sha256 = "9d76d449f1edb1d74996ebf8b117371b5cdde436cfa595b3ff3989ec8d026106" %}
+{% set version = "0.60" %}
+{% set sha256 = "85500022ebf58e9bd514e295270cb5ac2b061b2e59912432a3a7ceffd88db3e0" %}
 
 package:
   name: {{ name|lower }}
