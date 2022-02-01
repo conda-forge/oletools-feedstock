@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -23,10 +23,20 @@ requirements:
     - pip
   run:
     - python >=3.6
+    - colorclass
+    - easygui
+    - msoffcrypto-tool
+    - olefile
+    - pcodedmp
+    - pyparsing
 
 test:
   imports:
     - oletools
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/decalage2/oletools
