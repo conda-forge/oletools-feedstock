@@ -1,0 +1,61 @@
+schema_version: 1
+
+context:
+  name: oletools
+  version: 0.60.2
+  sha256: a9cc0d5a1b5a7216cbbb9248c927278e8738e1df0c0c7e06ebbeeb23542efcbd
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://github.com/decalage2/${{ name }}/archive/v${{ version }}.tar.gz
+  sha256: ${{ sha256 }}
+  file_name: ${{ name }}-${{ version }}.tar.gz
+
+build:
+  number: 2
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . --no-deps -vv
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - setuptools
+    - pip
+  run:
+    - python >=${{ python_min }}
+    - colorclass
+    - easygui
+    - msoffcrypto-tool
+    - olefile
+    - pcodedmp
+    - pyparsing <3,>=2.1.0
+
+tests:
+  - python:
+      imports:
+        - oletools
+      python_version: ${{ python_min }}.*
+  - requirements:
+      run:
+        - pip
+        - python ${{ python_min }}.*
+    script:
+      - pip check
+
+about:
+  license: BSD-3-Clause
+  license_file: oletools/LICENSE.txt
+  summary: python tools to analyze MS OLE2 files
+  description: oletools is a package of python tools to analyze Microsoft OLE2 files (also called Structured Storage, Compound File Binary Format or Compound Document File Format), such as Microsoft Office documents or Outlook messages, mainly for malware analysis, forensics and debugging.
+  homepage: https://github.com/decalage2/oletools
+  repository: https://github.com/decalage2/oletools
+  documentation: https://github.com/decalage2/oletools/wiki
+
+extra:
+  recipe-maintainers:
+    - jan-janssen
+    - cshaley
+    - sannykr
